@@ -1,0 +1,6 @@
+Tags: These are nothing but the keywords which are used to format and display the webpage as per requirement. Variety of tags are present which are enclosed in angle brackets. It starts with <tag>This is an example for tag</tag>. In this example <tag> is called an opening tag whereas </tag> is called a closing tag. Thus the tag is used to format the content inside it.
+
+Element: The elements consist of opening tag, content and closing tab ( if applicable).
+Thus it consists of everything from start to end tag.
+Example: <h1> Welcome to my webpage</h1>
+As mentioned in the above example it can be referred to as an element in HTML.

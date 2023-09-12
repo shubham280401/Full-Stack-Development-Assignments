@@ -1,0 +1,2 @@
+DOCTYPE in HTML is used to tell the browser which type of document to expect.
+HTML documents always start with <!DOCTYPE html>.

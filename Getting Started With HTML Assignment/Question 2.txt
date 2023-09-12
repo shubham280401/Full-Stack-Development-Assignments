@@ -1,0 +1,5 @@
+The purpose of using comment in HTML document is as follows:
+It is used to include explanation of code so that it would be easy to edit the source code later whenever required.
+Comments do not get rendered hence not displayed on the web browser.
+It is used to hide a piece of code instead of deleting it but it can be viewed in source code.
+Comment is written inside <!-- -- >.
