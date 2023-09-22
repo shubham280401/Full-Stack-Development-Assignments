@@ -1,0 +1,44 @@
+The features of HTML 5 are as follows:
+
+1. Semantics:
+
+When constructing an HTML script, the term “semantic” refers to the meaning of the text. Semantics, to put it simply, is the use of HTML tags that accurately reflect the content they contain. 
+Ex: <header>, <footer>, <article>, <section>,<form>, <table>, etc.
+
+2. Audio and Video support:
+
+No third party plugins are needed for playback. The audio and video can directly be embeded using this tag.
+
+3. Form enhancements:
+
+HTML 5 include new input types such as email, URL, placeholder text, required fields feature, validation, and more. 
+
+4. Canvas:
+
+With the help of Canvas elements, you can easily draw graphics using JavaScript. It is optimum for creating simple animations and drawing photo compositions. 
+
+5. Geolocation API:
+
+Ability to access the user's geographical location via JavaScript. It needs users permisiion before accessing it.
+For example in food ordering apps, fitness tracking app, taxi apps, etc. 
+
+6. Local storage:
+
+Store data on the user's device for offline use.
+
+7. Web workers:
+
+Ability to run JavaScript in the background, improving responsiveness and performance.
+
+8. Drag and Drop:
+
+Support for dragging and dropping elements.
+
+9. Web Sockets:
+
+It supports bi-directional communication between the client and server, enabling real-time updates.
+
+10. Responsive Design:
+
+Media queries and flexible layouts for creating responsive web pages that adapt to different screen sizes and devices.
+The srcset attribute is used to specify different versions of images.

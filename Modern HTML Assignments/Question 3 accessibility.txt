@@ -1,0 +1,39 @@
+Web accessibility:
+
+Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them. More specifically, people can:
+
+1.perceive, understand, navigate, and interact with the Web
+2.contribute to the Web
+
+Essential reasons to create accessibility are as folloes:
+
+1. One of the primary reasons for web accessibility is to ensure that everyone, regardless of their abilities or disabilities, can access and interact with digital content.
+
+2.By making your website accessible, you broaden your potential audience. It's not just people with disabilities who benefit; it includes users with different devices, screen sizes, and browsers, as well as those in various situations.
+
+3. Accessible websites often have better search engine optimization (SEO) because they provide structured content that is easier for search engines to understand. 
+
+4. Many accessibility features, such as clear navigation and readable text, benefit all users. It has more user friendly design an layout.
+
+5. Accessibility can lead to economic benefits through increased customer reach and engagement
+
+6. Organizations that prioritize web accessibility often build a positive reputation for being socially responsible and inclusive, which can enhance their brand image.
+
+Benefits for different user group are as folloes:
+
+1. Visual disabilities:
+
+People with visual impairments include people with blindness, low-level vision, and color blindness. Many people with visual impairments use screen magnifiers that are either physical magnifiers or software zoom capabilities. Most browsers and operating systems these days have zoom capabilities. Some users will rely on screen readers, which is software that reads digital text aloud.
+
+2. Hearing disabilities:
+
+Providing transcripts and captions for audio and video content so that users with hearing impairments can access the information.
+
+3. Motor Disabilities: 
+
+Designing for keyboard navigation and ensuring that interactive elements are accessible via a keyboard, as users with motor disabilities may not be able to use a mouse.
+
+4. Cognitive Disabilities: 
+
+Creating clear and simple content, avoiding overly complex navigation, and providing ample time for users to read and understand content.
+Delivering content in more than one way, such as by text-to-speech or by video.

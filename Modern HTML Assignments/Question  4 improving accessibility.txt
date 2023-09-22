@@ -1,0 +1,15 @@
+Three ways in improving accessibility of HTML are as follows:
+
+1. Usung Semantic elements in HTML:
+
+Semantic HTML elements provide meaning and structure to web content, making it easier for both users and assistive technologies to understand and navigate the content.
+Example: <table>, <caption>, <th>, <tr>, <td>, <button>, <input> and many more.
+
+
+2. Describe Images: 
+
+When you use pictures on your webpage, add a short and clear description using the alt attribute. 
+
+3. Keyboard accessibility:
+
+As discussed in previous question not everyone using the website can use mouse so the website should be accessible using keyboard too so that one can navigate through different links and buttons by pressing 'tab' key.
