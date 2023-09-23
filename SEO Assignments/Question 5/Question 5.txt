@@ -1,0 +1,2 @@
+A favicon is a small image displayed next to the page title in the browser tab.Favicons are used to visually represent a website and help users quickly identify and differentiate it from other open tabs or bookmarks.
+
