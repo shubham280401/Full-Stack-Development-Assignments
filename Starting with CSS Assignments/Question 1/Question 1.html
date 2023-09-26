@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS</title>
+    <link rel="stylesheet" href="./Question 1.css">
+</head>
+<body style="background-color: lightblue;">
+    <style>
+        /*This is how CSS can be added internally.
+        It can be clearly seen here that when the CSS in added internally it has
+        higher preference than that of external so preference order 
+        of CSS is like inline>internal>external.*/
+        h1{
+            font-family: sans-serif;
+            text-decoration: underline ;
+            text-shadow: 2px;
+            background-color:rgb(175, 51, 51);
+            border-radius: 10%;
+            border-top-style: dotted;
+        }
+        .preferencelevel{
+            color: yellow;
+            background-color: black;
+        }
+        body{
+            background-color: beige;
+        }
+
+    </style>
+    <h1>Different ways to add CSS</h1>
+    <!-- /*This is the first way to add CSS i.e. inline -->
+    <h2>First Way</h2>
+    <div class="Wayone" id="firstway" style="color: chocolate;">
+        <p class="Inlinecss"><em>Inline CSS is one way by which CSS can be added in HTML document.</em></p>
+    </div>
+    <br>
+    <h2>Second and third Way</h2>
+    <div class="waytwo" id="secondway">
+        <article class="waythree" id="thirdway">
+            <strong>In this code it can be seen that the CSS is added internally in h1 tag.
+            Also in this text CSS will be added externally and you can see the text you
+            are reading is in red colour.</strong>
+        </article>
+    </div>
+    <br>
+    <h2>Priority of CSS styles</h2>
+    <div class="preferencelevel" id="priority">
+        <p>
+        <u>When the same element is target with inline, internal and external
+            CSS then inline is prefered over internal and internal over external.
+            <strong>Inline>Internal>External</strong>
+        </u></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.simpleparagraph{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.italic{
+    font-style: italic;
+    color: midnightblue;
+}
+.maincontent{
+    background-color: #f0f055;
+    padding: 10px;
+    border: 5px solid #ffcc00;
+}
+.fonts{
+    font-family: sans-serif ;
+    font-weight: lighter;
+}
+.specialparagraph{
+    border-radius: 15px;
+    background-color:rgba(222, 83, 13, 0.986);
+    padding: 15px;
+    font-size: 25px;
+    
+}
+.aligningparagraph{
+    text-align: center;
+}

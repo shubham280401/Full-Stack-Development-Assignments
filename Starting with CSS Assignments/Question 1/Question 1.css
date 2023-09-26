@@ -1,0 +1,12 @@
+/*This is targeting h1 element externally*/
+h1{
+    background-color: blue;
+}
+
+/*Here is the third way to add CSS i.e. External CSS*/
+#thirdway{
+    color: red;
+}
+body{
+    background-color: yellow;
+}

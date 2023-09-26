@@ -1,0 +1,35 @@
+:root{
+    --primary-bg-color: #3498db;
+    --text-color: #000000;
+    --form-opacity: 0.8;
+    --button-bg-color: ##00FF00 ;
+
+}
+body{
+    background-color: var(--primary-bg-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container h2{
+    text-align: center;
+}
+.firstname{
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+.lastname{
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+.gender{
+    font-style: italic;
+    background-color:  rgb(75, 239, 75);
+}
+.country{
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 5px;}
+.button{
+    background-color: var(--button-bg-color);
+}
