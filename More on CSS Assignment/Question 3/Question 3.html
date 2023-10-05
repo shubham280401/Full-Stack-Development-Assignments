@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        display: flex;
+        background-color: rgb(73, 73, 235);
+        padding: 10px;
+    }
+    header *{
+        display: inline;
+    }
+    header li{
+        margin: 0px 10px 0px 10px;
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        color: green;
+    }
+    header .dotted{
+        border: 2px;
+        border-style: dotted;
+        padding: 5px;
+    }
+    header .dashed{
+        border: 2px;
+        border-style: dashed;
+        padding: 10px;
+        border-color: brown;
+        border-bottom-color: pink;
+        border-width: 3px;
+        border-bottom-width: 5px;
+    }
+    header .solid{
+        border: 2px;
+        border-style: solid;
+        padding: 10px;
+        border-radius: 5px;
+        border-top-color: aqua;
+        border-right-color: aliceblue;
+        border-bottom-color: chartreuse;
+        border-left-color: gold;
+    }
+    header .double{
+        border: 3px;
+        border-style: double;
+        border-color: darkorange;
+        padding: 10px;
+    }
+    header .groove{
+        border: 2px;
+        border-style: groove;
+        border-color: burlywood;
+        border-radius: 5px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="dotted"><a href="#">Home</a></li>
+                <li class="dashed"><a href="#">About Us</a></li>
+                <li class="solid"><a href="#">Contact</a></li>
+                <li class="double"><a href="#">Blog</a></li>
+                <li class="groove"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
