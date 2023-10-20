@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    position: sticky;
+    height: 100px;
+    top: 0px;
+    background-color: black;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 20px;
+    margin: auto 0px;
+    height: fit-content;
+    color: white;
+}
+
+.nav{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto 0px;
+    height: fit-content;
+}
+.navitem{
+    display: inline;
+    margin: 0px 15px;
+    color: gray;
+}
+
+.navitem.home{
+    color: white;
+}
+main{
+    padding: 20px;
+}
+section{
+    margin: 10px 10px;
+}
+.navitem.start button{
+    padding: 15px 20px;
+    border-radius: 15px;
+    color: yellow;
+    background: transparent;
+    border: 2px solid rgb(203, 203, 7);
+}

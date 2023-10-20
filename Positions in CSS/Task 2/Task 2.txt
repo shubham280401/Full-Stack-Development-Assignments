@@ -1,0 +1,5 @@
+position: relative; changes the position of the element relative to the parent element and relative to itself and where it would usually be in the regular document flow of the page. This means that it's relative to its original position within the parent element. Also the main thing is that it moves tag based on where it is currently situated or according to its surrounding element and also it does not affect the layout of webpage.
+
+In position: relative, the element is positioned relative to itself. However, an absolutely positioned element is relative to its parent.
+
+An element with position: absolute is removed from the normal document flow. It is positioned automatically to the starting point (top-left corner) of its parent element. If it doesn’t have any parent elements, then the initial document <html> will be its parent.
