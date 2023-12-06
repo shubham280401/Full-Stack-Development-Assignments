@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+    .box1, .box4{
+        background-color: black;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .box2, .box3{
+        padding: 20px;
+        text-align: center;
+        
+    }
+    .box2{
+        background-color: green;
+        color: white;  
+    }
+    .box3{
+        background-color: orange;
+        color: white;
+    }
+    
+@media screen and (min-width:768px) {
+    .container{
+        flex-direction: row;
+    }
+    .box2, .box3{
+        flex: 1;
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="main">
+           <div class="box2">Box 2</div>
+           <div class="box3">Box 3</div>
+        </div>
+        <div class="box4">Box 4</div>
+    </div>
+</body>
+</html>

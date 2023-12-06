@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .imagegallery{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .imagegallery img{
+        width: 30%;
+        margin: 10px;
+    }
+   @media screen and (max-width:800px) {
+    .imagegallery img{
+        width: 45%;
+    }
+   }
+   @media screen and (max-width:500px){
+    .imagegallery img{
+        width: 100%;
+    }
+   }
+</style>
+<body>
+    <div class="imagegallery">
+        <img src="./image.jpg" alt="image1">
+        <img src="./image.jpg" alt="image2">
+        <img src="./image.jpg" alt="image3">
+    </div>
+</body>
+</html>
