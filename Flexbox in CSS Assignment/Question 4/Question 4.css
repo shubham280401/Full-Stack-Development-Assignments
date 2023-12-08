@@ -1,0 +1,55 @@
+body, p, h2{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    background-color: #F4F2FD;
+}
+.card{
+    width: 262px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px;
+}
+.plan-name{
+    font-size: 32px;
+}
+.pricing{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px auto;
+}
+.features{
+    display: flex;
+    align-items: center;
+}
+.subscribe-now{
+    display: flex;
+    justify-content: center;
+}
+button{
+    
+    color: white;
+    background-color: #202842;
+    border-radius: 50px;
+    padding: 8px 24px 8px 24px;
+    font-size: 16px;
+    border-color: transparent;
+    margin:30px auto ;
+}
+
+.basicplan{
+    background-color: #202842;
+    color: white;
+}
+.dark-btn{
+    color: #202842;
+    background-color:#FFFFFF;
+}

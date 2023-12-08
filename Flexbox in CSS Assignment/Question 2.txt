@@ -1,0 +1,9 @@
+1. justify-content: This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+
+2. align-items: The align-items property defines the default behavior for how items are laid out along the cross axis (perpendicular to the main axis).
+
+3. gap: The gap property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges.
+
+4. flex-direction: The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+
+5. flex-wrap: The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
