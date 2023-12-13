@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-self and justify-items</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        display: grid;
+        background-color: gray;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        justify-items: center;
+    }
+    .item{
+        background-color: rgb(238, 179, 69);
+        padding: 1.5rem;
+        border-radius: 10px;
+        height: 250px;
+        width: 300px;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>

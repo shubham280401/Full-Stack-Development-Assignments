@@ -1,0 +1,17 @@
+Task 3
+
+Grid auto row:
+
+This property sets the size for rows that are created implicitly in the grid, meaning rows that are not explicitly defined using grid-template-rows. Thus, the new row which will be created here will take the size as defined using "grid-auto-row" property.
+
+For example:
+
+In the given code as you can see that the default grid layout is having one column and two rows. So whenever the new row will be added here like "G" as you can see so it will automatically take the value as defined in "grid-auto-row".
+
+Grid auto column:
+
+The grid-auto-columns property specifies the width for any additional columns created beyond the explicitly defined columns (grid-template-columns). If you have more grid items than the number of explicitly defined columns, the additional columns will take on the width specified by grid-auto-columns.
+
+For example:
+
+In the given code only one explicitly defined column is there and thus whenever extra column will be added it will automatically take the value as defined by "grid-auto-columns".
