@@ -1,0 +1,22 @@
+:root{
+    --primary: #00b7ff;
+    --secondary: #6c757d;
+    --text-colour: white;
+    --border: none;
+    --padding: 0.8rem;
+    --font-size: 1rem;
+}
+#primaryBtn{
+    background-color: var(--primary);
+    color: var(--text-colour);
+    border: var(--border);
+    padding: var(--padding);
+    font-size: var(--font-size);
+}
+#secondaryBtn{
+    background-color: var(--secondary);
+    color: var(--text-colour);
+    border: var(--border);
+    padding: var(--padding);
+    font-size: var(--font-size);
+}
