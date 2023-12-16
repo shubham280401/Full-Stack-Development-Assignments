@@ -1,0 +1,21 @@
+1. Unary Operators:
+
+Unary operators work with a single operand.
+Examples:
+++ (Increment): Increases the value of a variable by 1.
+-- (Decrement): Decreases the value of a variable by 1.
+! (Logical NOT): Negates a Boolean value, converting true to false and false to true.
+
+2. Binary Operators:
+
+Binary operators work with two operands.
+Examples:
++ (Addition): Adds two values together.
+- (Subtraction): Subtracts one value from another.
+* (Multiplication): Multiplies two values.
+
+3. Ternary Operator:
+
+The ternary operator is the only operator in JavaScript that takes three operands.
+Syntax: condition ? expressionIfTrue : expressionIfFalse
+It acts as a shorthand for an if-else statement, allowing you to make a decision based on a condition.

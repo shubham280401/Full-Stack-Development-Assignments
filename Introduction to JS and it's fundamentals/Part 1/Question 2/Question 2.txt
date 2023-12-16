@@ -1,0 +1,18 @@
+Arithmetic Operators:
+
+Used for basic arithmetic operations such as addition (+), subtraction (-), multiplication (*), division (/), modulo (%) for obtaining remainders, and exponentiation (**). They are primarily used for numeric calculations.
+
+
+Assignment Operators:
+
+These operators are a shorthand way of performing an operation and assignment at the same time. For instance, += adds the right operand to the left operand and assigns the result to the left operand.
+
+
+Comparison Operators:
+
+Used to compare values or expressions and return a Boolean result (true or false). They include operators like == (equality), === (strict equality), != (inequality), !== (strict inequality), >, <, >=, and <=.
+
+
+Logical Operators:
+
+These operators are used to perform logical operations on Boolean values or expressions. && (logical AND) returns true if both operands are true, || (logical OR) returns true if at least one operand is true, and ! (logical NOT) negates the value of its operand.

@@ -1,0 +1,17 @@
+Precedence and associativity in JavaScript determine the order in which operators are evaluated within an expression. Understanding these concepts is crucial because they govern how expressions are interpreted and executed, ensuring that the results align with the intended logic.
+
+1. Precedence:
+
+Precedence determines the priority of operators. Operators with higher precedence are executed first.
+For instance, multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-). So, in 2 + 3 * 4, the multiplication (3 * 4) is evaluated first due to its higher precedence, resulting in 2 + 12 as the final computation.
+
+
+2. Associativity:
+
+Associativity defines the order in which operators of the same precedence are evaluated. It can be left-to-right or right-to-left.
+For example, the addition (+) and subtraction (-) operators have the same precedence and left-to-right associativity. In 10 - 3 + 2, the subtraction 10 - 3 is evaluated first due to left-to-right associativity, resulting in 7 + 2 as the final computation.
+Understanding precedence and associativity helps in writing expressions that produce the intended results without ambiguity. It's essential when dealing with complex expressions, as it dictates how operators are grouped and executed within an expression.
+
+Explicitly using parentheses () can override the default precedence and associativity, ensuring the desired order of evaluation. For instance, (2 + 3) * 4 will perform the addition first due to parentheses, resulting in 5 * 4.
+
+By knowing the rules of precedence and associativity, developers can write more readable and predictable code, avoiding unexpected behaviors and ensuring that expressions are evaluated in the intended order.

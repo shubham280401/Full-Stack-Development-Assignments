@@ -1,0 +1,27 @@
+Comments in JavaScript play a crucial role in code readability, documentation, and collaboration among developers. They're non-executable lines within the code that provide explanations, notes, or descriptions about the code itself. Here's why comments are important:
+
+1. **Code Clarity:** Comments explain the purpose of code snippets, making it easier for others (or even yourself, in the future) to understand the intention behind certain operations or logic.
+
+2. **Documentation:** They serve as a form of documentation, helping developers understand complex algorithms, functions, or any unconventional code structures.
+
+3. **Debugging and Troubleshooting:** Comments can be used to temporarily disable certain code sections for debugging purposes without deleting them entirely.
+
+4. **Collaboration:** When working in teams, comments facilitate communication among team members by providing context and explanations about specific code segments.
+
+Here are examples of single-line and multi-line comments in JavaScript:
+
+**Single-Line Comment:**
+```javascript
+// This is a single-line comment in JavaScript
+let number = 5; // Assigning value 5 to the variable 'number'
+```
+
+**Multi-Line Comment:**
+```javascript
+/*
+  This is a multi-line comment in JavaScript.
+  It spans multiple lines and can contain detailed explanations.
+  This is useful for providing in-depth documentation or commenting out blocks of code.
+*/
+let message = 'Hello, World!';
+```

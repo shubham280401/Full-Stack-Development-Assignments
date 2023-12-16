@@ -1,0 +1,6 @@
+Operators in JavaScript serve as the building blocks for performing various actions on data—manipulating values, performing arithmetic, comparing values, assigning values, and more. They are essential in programming for several reasons:
+
+1.Performing arithmatic operations
+2.Logical operations
+3.Assignment operations
+4.Coparision operations
