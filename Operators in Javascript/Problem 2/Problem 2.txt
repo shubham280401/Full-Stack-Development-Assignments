@@ -1,0 +1,12 @@
+The comma (,) operator evaluates each of its operands (from left to right) and returns the value of the last operand. This is commonly used to provide multiple updaters to a for loop's afterthought.
+
+Synatx:
+
+expression1, expression2, expression3, ..., expressionN
+
+
+Usage:
+
+The comma operator is primarily used in situations where multiple expressions need to be evaluated, but only the result of the last expression matters.
+
+The comma operator also allows the execution of multiple operations within a single line. It's also used when you want to perform sequential tasks but aren't interested in capturing or using the final value of the expression.

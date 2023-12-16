@@ -1,0 +1,10 @@
+The ternary operator, also known as the conditional operator, is a concise way to write conditional statements in JavaScript. It's often used as a shorthand for simple if-else statements.
+
+Syntax:
+The syntax of the ternary operator is:
+
+condition ? expressionIfTrue : expressionIfFalse
+
+condition: A boolean expression that evaluates to either true or false.
+expressionIfTrue: The value or expression to be returned if the condition is true.
+expressionIfFalse: The value or expression to be returned if the condition is false.
