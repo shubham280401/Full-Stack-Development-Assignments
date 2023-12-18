@@ -1,0 +1,28 @@
+Conditional statements are fundamental in programming, allowing the execution of different code blocks based on certain conditions. They allow programs to make decisions and perform different actions depending on whether a condition is true or false.
+
+
+Syntax of if statement:
+
+if (condition) {
+    // code block to execute if the condition is true
+}
+
+
+Syntax of if-else statement:
+
+if (condition) {
+    // code block to execute if the condition is true
+} else {
+    // code block to execute if the condition is false
+}
+ 
+
+Syntax of if-else-if ladder:
+
+if (condition1) {
+    // code block to execute if condition1 is true
+} else if (condition2) {
+    // code block to execute if condition2 is true
+} else {
+    // code block to execute if both condition1 and condition2 are false
+}
