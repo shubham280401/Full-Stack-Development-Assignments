@@ -1,0 +1,3 @@
+const calculateTax = function(income){
+    
+}
