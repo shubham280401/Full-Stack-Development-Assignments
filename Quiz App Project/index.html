@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="start-screen">
+            <button id="start"><i class='bx bx-play play-ico'></i>Start</button>
+        </div>
+        <div class="display-container">
+            <div class="header">
+                <h2>Quiz App</h2>
+                <div class="quiz-info">
+                    <div class="number-of-count">
+                        <span class="number-of-question">Question: 1 / 10</span>
+                    </div>
+                    <div class="timer-div">
+                        <i class='bx bx-timer timer-ico'></i>
+                        <span class="time-left">10</span>
+                    </div>
+                    <div class="score-container">
+                        <span id="user-score">Score: 0 / 10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+            </div>
+            <p class="guess-msg"></p>
+            <button id="next-button">Next</button>
+        </div>
+        <div class="restart-container hide">
+            <p class="score-message"></p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
