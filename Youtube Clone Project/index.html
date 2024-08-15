@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="bg-[#0F0F0F] font-robo text-white h-screen overflow-hidden antialiased"
+  >
+    <!-- navbar starts here  -->
+    <nav class="flex flex-row mt-3 justify-between items-center">
+      <div class="flex ml-6 gap-5 items-center">
+        <div
+          class="hidden sm:inline-block h-10 hover:bg-[#303030] p-2 hover:rounded-full"
+        >
+          <button class="h-full">
+            <img
+              class="h-full"
+              src="./assets/icons/threeline-icon.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <a class="hover:cursor-pointer h-5"
+          ><img
+            class="h-full"
+            src="./assets/icons/youtube-logo.svg"
+            alt="youtube-logo"
+        /></a>
+      </div>
+
+      <div class="hidden md:flex gap-5 w-[35%] h-11">
+        <div class="flex w-full h-full">
+          <input
+            class="bg-[#121212] text-[#717171] border border-[#303030] w-full p-4 rounded-l-full h-full focus:outline-none focus:border-[#194D8F]"
+            type="text"
+            name="search"
+            placeholder="Search"
+          />
+
+          <button
+            class="bg-[#303030] border-[1px] border-[#303030] w-16 flex justify-center items-center rounded-r-full h-full"
+          >
+            <img src="./assets/icons/search-ico.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="h-full flex items-center w-10">
+          <button class="w-80 bg-[#303030] p-2 rounded-full border-0">
+            <img
+              class="w-full h-full"
+              src="./assets/icons/mic-ico.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="flex mr-6 gap-3 items-center h-11">
+        <button
+          class="inline-block md:hidden hover:bg-[#303030]hover:rounded-full p-2 h-full"
+        >
+          <img class="h-full" src="./assets/icons/search-ico.svg" alt="" />
+        </button>
+
+        <button
+          class="hidden md:inline-block h-full hover:bg-[#303030] p-2 hover:rounded-full"
+        >
+          <img class="h-full" src="./assets/icons/create-ico.svg" alt="" />
+        </button>
+
+        <button class="h-full hover:bg-[#303030] p-2 hover:rounded-full">
+          <img class="h-full" src="./assets/icons/bell-ico.svg" alt="" />
+        </button>
+
+        <button class="h-full">
+          <img
+            class="h-9 rounded-full"
+            src="./assets/pics/profile-pic.jpg"
+            alt="profile-pic"
+          />
+        </button>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- main section starts  -->
+    <main class="h-full flex mx-3 my-3">
+      <!-- left-side navbar  -->
+      <div
+        class="hidden md:inline-block h-full w-[6%] xl:w-[17%] text-sm font-medium text-[#dddddd] xl:overflow-hidden hover:overflow-y-scroll scrollbar pr-1"
+      >
+        <div
+          class="flex flex-col w-10 xl:w-full justify-center gap-8 xl:gap-0 text-[0.6rem] xl:text-sm ml-3 xl:ml-0"
+        >
+          <button
+            class="flex flex-col gap-1 xl:flex-row xl:gap-8 xl:bg-[#303030] h-10 items-center xl:px-4 py-1 rounded-lg"
+          >
+            <img src="./assets/icons/home-ico.svg" alt="" />Home
+          </button>
+
+          <button
+            class="flex flex-col gap-1 xl:flex-row xl:gap-8 h-10 items-center xl:px-4 py-1 rounded-lg hover:bg-[#303030]"
+          >
+            <img src="./assets/icons/shorts-ico.svg" alt="" />Shorts
+          </button>
+
+          <button
+            class="flex flex-col gap-1 xl:flex-row xl:gap-8 h-10 items-center xl:px-4 py-1 rounded-lg hover:bg-[#303030]"
+          >
+            <img
+              src="./assets/icons/subscription-ico.svg"
+              alt=""
+            />Subscriptions
+          </button>
+
+          <button
+            class="flex xl:hidden flex-col gap-1 xl:flex-row xl:gap-8 h-10 items-center xl:px-4 py-1 rounded-lg hover:bg-[#303030]"
+          >
+            <img src="./assets/icons/you-small-screen-ico.svg" alt="" />You
+          </button>
+        </div>
+
+        <hr class="hidden xl:block border-[#3f3f3f] my-4" />
+
+        <div class="hidden xl:flex flex-col w-full justify-center">
+          <a
+            href="#"
+            class="flex gap-4 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030] text-lg"
+            >You<img src="./assets/icons/right-arrow-ico.svg" alt=""
+          /></a>
+
+          <a
+            href="#"
+            class="flex gap-8 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/channel-ico.svg" alt="" />Your channel</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-8 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/history-ico.svg" alt="" />History</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-8 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/videos-ico.svg" alt="" />Your videos</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-8 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/watch-later-ico.svg" alt="" />Watch
+            later</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-8 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/down-arrow-ico.svg" alt="" />Show more</a
+          >
+        </div>
+
+        <hr class="hidden xl:block border-[#3f3f3f] my-4" />
+
+        <div class="hidden xl:flex flex-col w-full justify-center">
+          <span class="flex items-center px-4 py-1 text-lg">Subscriptions</span>
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              class="h-6 rounded-full"
+              src="./assets/pics/chai-code-pic.jpg"
+              alt=""
+            />Chai aur Code</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              class="h-6 rounded-full"
+              src="./assets/pics/not-your-type-pic.jpg"
+              alt=""
+            />NOT YOUR TYPE</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              class="h-6 rounded-full"
+              src="./assets/pics/code-harry-pic.jpg"
+              alt=""
+            />CodeWithHarry</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              class="h-6 rounded-full"
+              src="./assets/pics/pw-pic.jpg"
+              alt=""
+            />PW Skills Tech</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              class="h-6 rounded-full"
+              src="./assets/pics/apna-college-pic.jpg"
+              alt=""
+            />Apna College</a
+          >
+
+          <button
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+          >
+            <img src="./assets/icons/down-arrow-ico.svg" alt="" />Show 110 more
+          </button>
+        </div>
+
+        <hr class="hidden xl:block border-[#3f3f3f] my-4" />
+
+        <div class="hidden xl:flex flex-col w-full justify-center">
+          <span class="flex items-center px-4 py-1 text-lg">Explore</span>
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              src="./assets/explore-icons/trending-ico.svg"
+              alt=""
+            />Trending</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              src="./assets/explore-icons/shopping-ico.svg"
+              alt=""
+            />Shopping</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/explore-icons/music-ico.svg" alt="" />Music</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/explore-icons/movies-ico.svg" alt="" />Movies</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/explore-icons/live-ico.svg" alt="" />Live</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/explore-icons/gaming-ico.svg" alt="" />Gaming</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img
+              src="./assets/explore-icons/learning-ico.svg"
+              alt=""
+            />Learning</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/explore-icons/news-ico.svg" alt="" />News</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/explore-icons/sports-ico.svg" alt="" />Sports</a
+          >
+        </div>
+
+        <hr class="hidden xl:block border-[#3f3f3f] my-4" />
+
+        <div class="hidden xl:flex flex-col w-full justify-center">
+          <span class="flex items-center px-4 py-1 text-lg"
+            >More from YouTube</span
+          >
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/yt-premium.svg" alt="" />YouTube
+            Premium</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/yt-studio.svg" alt="" />YouTube Studio</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/yt-music.svg" alt="" />YouTube Music</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/yt-kids.svg" alt="" />YouTube Kids</a
+          >
+        </div>
+
+        <hr class="hidden xl:block border-[#3f3f3f] my-4" />
+
+        <div class="hidden xl:flex flex-col w-full justify-center">
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/settings.svg" alt="" />Settings</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/report.svg" alt="" />Report history</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/help.svg" alt="" />Help</a
+          >
+
+          <a
+            href="#"
+            class="flex gap-7 h-10 items-center px-4 py-1 rounded-lg hover:bg-[#303030]"
+            ><img src="./assets/icons/feedback.svg" alt="" />Send feedback</a
+          >
+        </div>
+
+        <hr class="hidden xl:block border-[#3f3f3f] my-4" />
+
+        <div
+          class="hidden xl:flex flex-col w-[95%] justify-center pb-20 gap-3 pl-2"
+        >
+          <a href="#" class="text-[#aaaaaa]"
+            >About Press Copyright Contactus Creators Advertise Developers</a
+          >
+
+          <a href="#" class="text-[#aaaaaa]"
+            >Terms Privacy Policy & SafetyHow YouTube works Test new features</a
+          >
+
+          <span class="text-xs text-[#717171]">© 2024 Google LLC</span>
+        </div>
+      </div>
+      <!-- left-side navbar ends  -->
+
+      <div class="flex flex-col gap-5 w-full">
+        <!-- tags section  -->
+        <div
+          class="sm:flex mx-6 flex-row gap-3 h-10 justify-center items-center font-semibold overflow-hidden sm:flex-wrap hidden"
+        >
+          <a
+            href="#"
+            class="bg-white text-[#0f0f0f] py-1 px-3 rounded-md text-sm"
+            >All</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Mixes</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Music</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >JavaScript</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Gaming</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Computers</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Live</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Algroithms</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Editing</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Mantras</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Dramedy</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Lectures</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >News</a
+          >
+          <a
+            href="#"
+            class="bg-[#303030] text-[#dddddd] py-1 px-3 rounded-md text-sm"
+            >Thrillers</a
+          >
+          <button
+            class="p-1 rounded-full hover:bg-[#303030] hidden lg:inline-block"
+          >
+            <img src="./assets/icons/right-arrow-ico.svg" alt="" />
+          </button>
+        </div>
+        <!-- tags section ends -->
+
+        <!-- video section starts  -->
+
+        <div
+          class="flex flex-col overflow-scroll h-screen scrollbar pb-20 w-full"
+        >
+          <div class="flex gap-12 flex-wrap justify-center w-full">
+            <!-- video details -->
+            <div class="group flex flex-col gap-2 w-[22rem] h-72">
+              <div class="flex group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-1-thumbnail.webp"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >3:15</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-1-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    What is LLD ? | Low Level Design
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span class="text-[#aaaaaa] text-base">Chai aur Code</span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      2.6k views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>2 hours
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] group h-72">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-2-thumbnail.webp"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >13:30</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-2-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    How To Master React In 2024 (Complete Roadmap)
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="text-[#aaaaaa] text-base flex gap-1 items-center"
+                      >Harkirat Singh
+                      <img
+                        class="h-4"
+                        src="./assets/explore-icons/verified ico.svg"
+                        alt=""
+                    /></span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      54k views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>3 days
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-3-thumbnail.webp"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >32:23</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-3-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    Incredible scroll-based animations with CSS-only
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="text-[#aaaaaa] text-base flex gap-1 items-center"
+                      >Kevin Powell<img
+                        class="h-4"
+                        src="./assets/explore-icons/verified ico.svg"
+                        alt=""
+                    /></span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      133k views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>3 weeks
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-4-thumbnail.jpg"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >5:06</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-4-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    KUNG FU PANDA 2 Clip - "Final Fight With Shen" (2011)
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="text-[#aaaaaa] text-base flex gap-1 items-center"
+                      >JoBlo Animated Videos<img
+                        class="h-4"
+                        src="./assets/explore-icons/verified ico.svg"
+                        alt=""
+                    /></span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      19M views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>2 years
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-5-thumbnail.jpg"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >2:30</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-5-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    Divya Drishti (दिव्य-दृष्टि) | DeeVoy Singh | Prod. Pendo46
+                    | Hindi Rap
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="text-[#aaaaaa] text-base flex gap-1 items-center"
+                      >DeeVoy Singh<img
+                        class="h-4"
+                        src="./assets/explore-icons/music-ico.svg"
+                        alt=""
+                    /></span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      1.2M views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>11 months
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-6-thumbnail.jpg"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >5:09</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-6-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    Haye Ni Apa Fer Milange, Kde Na Kde Fer Milange (Video
+                    Song)|Savi...
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span class="text-[#aaaaaa] text-base">RKN RECORDS</span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      1.7M views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>3 weeks
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-7-thumbnail.jpg"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >47:13</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-7-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">build your own cloud</h4>
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="text-[#aaaaaa] text-base flex gap-1 items-center"
+                      >NetworkChuck<img
+                        class="h-4"
+                        src="./assets/explore-icons/verified ico.svg"
+                        alt=""
+                    /></span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      1.3M views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>6 months
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="./assets/videos/video-8-thumbnail.webp"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >13:10</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-8-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col group-hover:cursor-pointer">
+                  <h4 class="text-lg font-normal">
+                    Best Friend Vs Girlfriend | Zakir Khan | Stand-Up Comedy |
+                    Mannpasand
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span class="text-[#aaaaaa] text-base">Zakir Khan</span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      1.4M views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>1 day ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+
+            <!-- video details -->
+            <div class="flex flex-col gap-2 w-[22rem] h-72 group">
+              <div class="group-hover:cursor-pointer relative">
+                <img
+                  class="rounded-[0.65rem] h-full object-cover"
+                  src="/assets/videos/video-9.thumbnail.webp"
+                  alt=""
+                />
+                <span
+                  class="text-xs font-medium absolute bottom-1 right-1 text-white bg-[#212121] px-1 py-[3px] rounded-md bg-opacity-90"
+                  >4:03</span
+                >
+              </div>
+
+              <div class="flex gap-3 group-hover:cursor-pointer">
+                <img
+                  class="rounded-full w-11 h-11"
+                  src="/assets/videos/video-9-profile.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-col">
+                  <h4 class="text-lg font-normal">
+                    Mujhe Tum Nazar Se (Reprise) - JalRaj | Mehdi Hassan| New
+                    Hindi...
+                  </h4>
+                  <div class="flex flex-col justify-center">
+                    <span class="text-[#aaaaaa] text-base">JalRaj</span>
+                    <p class="text-[#aaaaaa] text-sm flex items-center gap-1">
+                      858k views
+                      <i class="fa-solid fa-circle text-[0.25rem]"></i>1 year
+                      ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video details -->
+          </div>
+        </div>
+        <!-- video section ends  -->
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/136b89f4e6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
